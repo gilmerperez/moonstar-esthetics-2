@@ -25,6 +25,7 @@ export default function Hero() {
           height={150}
           className={styles.moonstarMoon}
           priority
+          style={{ width: "auto" }}
         />
         <div className={styles.moonstarLogo}>
           <span className={styles.moonstar}>MOONSTAR</span>

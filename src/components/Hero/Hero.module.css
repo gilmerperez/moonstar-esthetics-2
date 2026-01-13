@@ -12,7 +12,9 @@
 
 /* Moonstar logo */
 .moonstarMoon {
+  width: auto;
   height: 150px;
+  object-fit: contain;
   margin-bottom: 1rem;
   transition: 0.3s ease;
 }
@@ -111,6 +113,7 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .moonstarMoon {
+    width: auto;
     height: 125px;
   }
 
@@ -148,6 +151,7 @@
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .moonstarMoon {
+    width: auto;
     height: 100px;
   }
 
