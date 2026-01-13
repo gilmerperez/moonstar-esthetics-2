@@ -1,12 +1,7 @@
 import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "./not-found.module.css";
 
-export const metadata = {
-  title: "Moonstar Esthetics | Page Not Found",
-  description: "The page you are looking for does not exist.",
-};
-
-export default function PageNotFound() {
+export default function NotFound() {
   return (
     <>
       <main className={styles.notFoundContainer}>
