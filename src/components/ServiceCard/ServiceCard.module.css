@@ -1,0 +1,227 @@
+.serviceCard {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  justify-content: center;
+  box-shadow: var(--shadow-small);
+  border: 2px solid var(--primary);
+}
+
+.serviceCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-large);
+}
+
+/* Service image */
+.serviceImageContainer {
+  width: 250px;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Service content */
+.serviceContent {
+  flex-grow: 1;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Service name */
+.serviceName {
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.25rem;
+}
+
+/* Service meta content */
+.serviceMetaContent {
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.25rem;
+  color: var(--text-secondary);
+}
+
+.serviceMetaSeperator {
+  font-weight: 500;
+  margin: 0rem 0.5rem;
+  color: var(--text-primary);
+}
+
+.serviceDescription {
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.buttonContainer {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Book now button */
+.bookNowButton {
+  font-size: 1.15rem;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--primary);
+  box-shadow: var(--shadow-primary);
+  background-color: var(--header-bg-color);
+}
+
+.bookNowButton:hover {
+  background-color: var(--primary);
+}
+
+/* Cancellation policy icon */
+.policyIconButton {
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: 0.3s ease;
+}
+
+.policyIconButton:hover {
+  transform: translateY(-3px);
+}
+
+/* Cancellation policy modal */
+.modalOverlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+.modalContent {
+  padding: 2rem;
+  max-width: 88%;
+  text-align: center;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  background-color: var(--header-bg-color);
+}
+
+.modalTitle {
+  font-size: 2rem;
+  color: var(--primary);
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.modalText {
+  max-width: 500px;
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.modalCloseButton {
+  font-weight: 500;
+  font-size: 1.25rem;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--primary);
+  background-color: var(--header-bg-color);
+}
+
+.modalCloseButton:hover {
+  box-shadow: var(--shadow-primary);
+  background-color: var(--primary);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .serviceCard {
+    flex-direction: column;
+  }
+
+  .serviceImageContainer {
+    width: 100%;
+    height: 250px;
+  }
+
+  .serviceDescription {
+    font-size: 1.15rem;
+  }
+
+  .modalContent {
+    padding: 1.5rem;
+  }
+
+  .modalTitle {
+    font-size: 1.75rem;
+  }
+
+  .modalText {
+    font-size: 1.15rem;
+  }
+
+  .modalCloseButton {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .serviceImageContainer {
+    height: 200px;
+  }
+
+  .serviceName {
+    font-size: 1.375rem;
+  }
+
+  .serviceMetaContent {
+    font-size: 1.15rem;
+  }
+
+  .serviceDescription {
+    font-size: 1rem;
+  }
+
+  .bookNowButton {
+    font-size: 1rem;
+  }
+
+  .policyIconButton {
+    font-size: 1.25rem;
+  }
+
+  .modalContent {
+    padding: 1.25rem;
+  }
+
+  .modalTitle {
+    font-size: 1.5rem;
+  }
+
+  .modalText {
+    font-size: 1rem;
+  }
+
+  .modalCloseButton {
+    font-size: 1rem;
+  }
+}

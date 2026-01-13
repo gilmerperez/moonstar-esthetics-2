@@ -1,0 +1,177 @@
+.heroSection {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Moonstar logo */
+.moonstarMoon {
+  height: 150px;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+}
+
+.moonstarLogo {
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  flex-direction: column;
+  letter-spacing: 0.75rem;
+  justify-content: center;
+}
+
+.moonstar {
+  font-size: 4rem;
+  color: var(--primary);
+  transition: 0.3s ease;
+}
+
+.esthetics {
+  font-size: 3rem;
+  transition: 0.3s ease;
+  color: var(--secondary);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 475px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-small);
+  background-image: url("/images/anakarina-1.JPG");
+}
+
+.imageContainer:hover {
+  box-shadow: var(--shadow-large);
+}
+
+.imageContainer::before {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+}
+
+/* Title */
+.homeTitle {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--primary);
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Description */
+.homeDescription {
+  text-align: center;
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  color: var(--text-secondary);
+}
+
+/* Business introduction */
+.businessIntroduction {
+  text-align: center;
+  font-size: 1.375rem;
+  transition: 0.3s ease;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1200px) {
+  .homeTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .homeTitle {
+    font-size: 3rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .moonstarMoon {
+    height: 125px;
+  }
+
+  .moonstar {
+    font-size: 3.5rem;
+  }
+
+  .esthetics {
+    font-size: 2.75rem;
+  }
+
+  .imageContainer {
+    background-image: url("/images/anakarina-2.JPG");
+  }
+
+  .homeTitle {
+    font-size: 2.75rem;
+  }
+
+  .homeDescription {
+    font-size: 1.25rem;
+  }
+
+  .businessIntroduction {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .homeTitle {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .moonstarMoon {
+    height: 100px;
+  }
+
+  .moonstar {
+    font-size: 2rem;
+  }
+
+  .esthetics {
+    font-size: 1.5rem;
+  }
+
+  .imageContainer {
+    background-image: url("/images/anakarina-3.jpeg");
+  }
+
+  .homeTitle {
+    font-size: 1.5rem;
+  }
+
+  .homeDescription {
+    font-size: 1rem;
+  }
+
+  .businessIntroduction {
+    font-size: 1rem;
+  }
+}

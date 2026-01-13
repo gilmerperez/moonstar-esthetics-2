@@ -1,0 +1,105 @@
+.ledLightTherapySection {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  box-shadow: var(--shadow-small);
+}
+
+.ledLightTherapySection:hover {
+  box-shadow: var(--shadow-large);
+}
+
+.ledLightTherapySection::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+  background-color: hsla(0, 0%, 0%, 0.25);
+}
+
+.ledLightTherapyContent {
+  z-index: 1;
+  position: relative;
+}
+
+.ledLightTherapyTitle {
+  font-size: 2.5rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.25rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Libre Baskerville", serif;
+}
+
+.ledLightDescription1,
+.ledLightDescription2 {
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  color: hsl(0, 0%, 90%);
+}
+
+.switchButton {
+  padding: 0.75rem;
+  font-size: 1.375rem;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 0%, 0.25);
+}
+
+.switchButton:hover {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .ledLightTherapySection {
+    padding: 1.75rem;
+  }
+
+  .ledLightTherapyTitle {
+    font-size: 2.25rem;
+  }
+
+  .ledLightDescription1,
+  .ledLightDescription2 {
+    font-size: 1.25rem;
+  }
+
+  .switchButton {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .ledLightTherapySection {
+    padding: 1.5rem;
+  }
+
+  .ledLightTherapyTitle {
+    font-size: 1.75rem;
+  }
+
+  .ledLightDescription1,
+  .ledLightDescription2 {
+    font-size: 1.15rem;
+  }
+
+  .switchButton {
+    font-size: 1.15rem;
+  }
+}

@@ -1,0 +1,191 @@
+.routineSection {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  box-shadow: var(--shadow-small);
+  background-color: hsl(0, 0%, 10%);
+}
+
+.routineSection:hover {
+  box-shadow: var(--shadow-large);
+}
+
+/* Title */
+.routineTitle {
+  font-size: 2.5rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.25rem;
+  color: hsl(0, 0%, 90%);
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Description */
+.routineDescription {
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  color: hsl(0, 0%, 80%);
+}
+
+/* Steps */
+.routineSteps {
+  gap: 1rem;
+  display: grid;
+  align-items: center;
+  transition: 0.3s ease;
+  justify-content: center;
+  grid-template-columns: auto 1fr 2fr;
+}
+
+.stepNumber {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  font-size: 1.75rem;
+  border-radius: 5rem;
+  align-items: center;
+  transition: 0.3s ease;
+  justify-content: center;
+  color: hsl(0, 0%, 10%);
+  background-color: var(--secondary);
+}
+
+.stepNumber:hover {
+  background-color: var(--primary);
+}
+
+.stepHeading {
+  width: auto;
+  height: 75px;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  border-radius: 5rem;
+  transition: 0.3s ease;
+  justify-content: center;
+  color: hsl(0, 0%, 10%);
+  background-color: var(--secondary);
+}
+
+.stepHeading:hover {
+  background-color: var(--primary);
+}
+
+.stepText {
+  width: auto;
+  height: 75px;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.5rem;
+  align-items: center;
+  border-radius: 5rem;
+  transition: 0.3s ease;
+  justify-content: center;
+  color: hsl(0, 0%, 10%);
+  background-color: var(--secondary);
+}
+
+.stepText:hover {
+  background-color: var(--primary);
+}
+
+@media (max-width: 1100px) {
+  .stepText {
+    font-size: 1.35rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .routineSection {
+    padding: 1.75rem;
+  }
+
+  .routineTitle {
+    font-size: 2.25rem;
+  }
+
+  .routineDescription {
+    font-size: 1.25rem;
+  }
+
+  .routineSteps {
+    gap: 0.75rem;
+  }
+
+  .stepNumber {
+    font-size: 1.5rem;
+  }
+
+  .stepHeading {
+    font-size: 1.25rem;
+  }
+
+  .stepText {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .stepText {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .stepText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .stepText {
+    font-size: 0.75rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .routineSection {
+    padding: 1.5rem;
+  }
+
+  .routineTitle {
+    font-size: 1.75rem;
+  }
+
+  .routineDescription {
+    font-size: 1.15rem;
+  }
+
+  .routineSteps {
+    gap: 0.5rem;
+  }
+
+  .stepNumber {
+    width: 65px;
+    height: 65px;
+    font-size: 1.25rem;
+  }
+
+  .stepHeading {
+    height: 65px;
+    padding: 0.65rem;
+    font-size: 0.75rem;
+  }
+
+  .stepText {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+}

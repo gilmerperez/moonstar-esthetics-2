@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Gilmer",
+    "stars": 5,
+    "timestamp": "Last Year",
+    "text": "Ana did such an amazing job on my visit. She recommended a facial and IPL laser for acne scars. She explained everything thoroughly. My face felt better and I felt confident in product use afterward. Highly recommended!"
+  },
+  {
+    "id": 2,
+    "name": "Gabriela",
+    "stars": 5,
+    "timestamp": "Last Year",
+    "text": "AnaKarina gave me a relaxing spa experience with her facial. Loved the extractions, high frequency, and massages. She also recommended personalized skincare products. Beautiful and clean studio."
+  },
+  {
+    "id": 3,
+    "name": "Barbara Dominguez",
+    "stars": 5,
+    "timestamp": "2 Years Ago",
+    "text": "La mejor inversión que he hecho. Resultado rápido, efectivo, atención increíble, excelente precio y ambiente relajante. ¡Me encanta! 😍"
+  },
+  {
+    "id": 4,
+    "name": "Margaret",
+    "stars": 5,
+    "timestamp": "2 Years Ago",
+    "text": "AnaKarina explains her process clearly, listens to concerns, and recommends products. Her touch is subtle and soothing. Her sessions are incredibly relaxing. Highly recommended!"
+  }
+]

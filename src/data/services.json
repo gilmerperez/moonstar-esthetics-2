@@ -1,0 +1,362 @@
+[
+  {
+    "category": "FACIAL TREATMENTS",
+    "description": "Our Facial Treatments are designed to deeply cleanse, rejuvenate, and restore your skin's natural glow. Ideal for all skin types, these services target common concerns such as dullness, dryness, acne, aging, and uneven texture. Each facial is customized to your skin's unique needs—whether you're seeking hydration, exfoliation, calming relief, or anti-aging benefits. We work primarily on the face, neck, and décolleté, using advanced techniques and tools including steam therapy, LED light therapy, microdermabrasion, dermaplaning, IPL, and high-frequency technology. Whether you're preparing for a special event, managing a chronic skin condition, or simply treating yourself, our facials provide visible results and a deeply relaxing experience.",
+    "services": [
+      {
+        "id": 1,
+        "image": "/service-images/facial-treatments/basic-facial.jpg",
+        "name": "Basic Facial",
+        "duration": "1h 30m",
+        "price": 55,
+        "description": "Our signature Basic Facial provides a complete skin refresh with deep cleansing, thorough skin analysis, relaxing steam treatment, gentle exfoliation, targeted extractions (if needed), a nourishing mask, and finishes with moisturizer and sunscreen protection for radiant, healthy-looking skin."
+      },
+      {
+        "id": 2,
+        "image": "/service-images/facial-treatments/full-facial.jpg",
+        "name": "Full Facial",
+        "duration": "1h 30m",
+        "price": 68,
+        "description": "Elevate your skincare routine with our Full Facial, featuring all the benefits of our Basic Facial plus rejuvenating high frequency treatment, revitalizing LED light therapy, potent serum infusion, and a luxurious facial massage for ultimate relaxation and skin renewal."
+      },
+      {
+        "id": 3,
+        "image": "/service-images/facial-treatments/deluxe-facial.jpg",
+        "name": "Deluxe Facial",
+        "duration": "1h 30m",
+        "price": 80,
+        "description": "Experience premium skincare with our Deluxe Facial, combining advanced Microdermabrasion for refined texture with our exclusive Hydrojelly mask treatment that deeply hydrates and plumps the skin for a visibly refreshed, glowing complexion."
+      },
+      {
+        "id": 4,
+        "image": "/service-images/facial-treatments/dermaplaning.jpg",
+        "name": "Dermaplaning",
+        "duration": "1h",
+        "price": 55,
+        "description": "Our professional Dermaplaning treatment gently removes dead skin cells and vellus hair (peach fuzz) using a surgical-grade blade, revealing dramatically smoother, brighter skin with enhanced product absorption and flawless makeup application."
+      },
+      {
+        "id": 5,
+        "image": "/service-images/facial-treatments/dermaplaning-facial.jpg",
+        "name": "Dermaplaning + Facial",
+        "duration": "1h 30m",
+        "price": 90,
+        "description": "The perfect combination of exfoliation and nourishment - this treatment begins with our expert Dermaplaning followed by a complete Full Facial to maximize product penetration and leave your skin velvety smooth, radiant, and deeply hydrated."
+      },
+      {
+        "id": 6,
+        "image": "/service-images/facial-treatments/rejuvenating-facial-ipl.avif",
+        "name": "Rejuvenating Facial (IPL)",
+        "duration": "1h 30m",
+        "price": 100,
+        "description": "Our advanced Rejuvenating Facial incorporates IPL (Intense Pulsed Light) technology to target pigmentation, redness, and signs of aging while stimulating collagen production, combined with premium facial treatments for comprehensive skin renewal."
+      },
+      {
+        "id": 7,
+        "image": "/service-images/facial-treatments/hydrodermabrasion-facial.jpg",
+        "name": "HydroDermabrasion Facial",
+        "duration": "1h 10m",
+        "price": 108,
+        "description": "Experience the next generation of skin resurfacing with our HydroDermabrasion Facial, which combines the benefits of liquid exfoliation with nourishing serums, enhanced by LED light therapy and a customized mask to address your specific skin concerns."
+      },
+      {
+        "id": 8,
+        "image": "/service-images/facial-treatments/acne-treatment-facial.png",
+        "name": "Acne Treatment Facial",
+        "duration": "1h 30m",
+        "price": 100,
+        "description": "Specifically designed for acne-prone skin, this intensive treatment combines deep cleansing, professional extractions, and IPL Laser therapy to reduce inflammation, kill acne-causing bacteria, and promote clearer, healthier-looking skin with minimized breakouts."
+      },
+      {
+        "id": 9,
+        "image": "/service-images/facial-treatments/gua-sha-facial.png",
+        "name": "Gua Sha Facial",
+        "duration": "1h",
+        "price": 90,
+        "description": "Drawing from ancient Chinese techniques, our Gua Sha Facial incorporates lymphatic drainage massage with smooth jade tools to reduce puffiness, enhance circulation, and sculpt facial contours, complemented by LED light therapy and a relaxing hand massage."
+      },
+      {
+        "id": 10,
+        "image": "/service-images/facial-treatments/couples-facial.avif",
+        "name": "Couple's Facial",
+        "duration": "2h 30m",
+        "price": 115,
+        "description": "Enjoy a romantic skincare experience with our Couple's Facial, offering side-by-side Full Facial treatments in our serene environment - perfect for partners seeking quality time together while achieving glowing, refreshed complexions."
+      },
+      {
+        "id": 11,
+        "image": "/service-images/facial-treatments/hydrojelly-mask-add-on.webp",
+        "name": "HydroJelly Mask Add-On",
+        "duration": "15m",
+        "price": 15,
+        "description": "Enhance any facial with our luxurious HydroJelly Mask, a bio-cellulose treatment that delivers intense hydration and active ingredients deep into the skin for immediate plumping, brightening, and nourishing benefits."
+      },
+      {
+        "id": 12,
+        "image": "/service-images/facial-treatments/microdermabrasion-add-on.jpg",
+        "name": "Microdermabrasion Add-On",
+        "duration": "15m",
+        "price": 20,
+        "description": "Boost your facial results with our professional Microdermabrasion add-on, using crystal-free exfoliation to smooth texture, minimize pores, reduce fine lines, and reveal dramatically brighter, more even-toned skin."
+      }
+    ]
+  },
+  {
+    "category": "IPL LASER SERVICES",
+    "description": "Our IPL Laser Services provide a safe, effective, and long-lasting solution for unwanted hair across the face and body. Using advanced Intense Pulsed Light (IPL) technology, we target hair at the follicle to gradually reduce growth with minimal discomfort and no downtime. Ideal for those seeking smoother skin with fewer ingrown hairs, our treatments are tailored to suit your skin type and treatment area. We offer services for all major zones, including the upper lip, chin, underarms, arms, legs, bikini area, chest, back, and full body. In addition to hair removal, IPL can also help improve skin texture and tone. Whether you're looking for a single area or a full-body treatment, our professional and discreet approach ensures lasting results and a confident you.",
+    "services": [
+      {
+        "id": 13,
+        "image": "/service-images/laser-ipl/upper-lip-ipl.webp",
+        "name": "Upper Lip",
+        "duration": "20m",
+        "price": 22,
+        "description": "Our precise IPL Laser treatment for the upper lip area effectively reduces unwanted hair with minimal discomfort, leaving you with smooth, hair-free skin and reduced maintenance between sessions."
+      },
+      {
+        "id": 14,
+        "image": "/service-images/laser-ipl/full-face-ipl.webp",
+        "name": "Full Face",
+        "duration": "30m",
+        "price": 45,
+        "description": "Comprehensive IPL Laser treatment for the entire face that not only reduces unwanted hair but can also improve skin texture and tone, giving you a consistently smooth, even complexion."
+      },
+      {
+        "id": 15,
+        "image": "/service-images/laser-ipl/underarms-ipl.jpg",
+        "name": "Underarms",
+        "duration": "30m",
+        "price": 38,
+        "description": "Say goodbye to razor burns and irritation with our underarm IPL treatment that provides long-lasting hair reduction while being gentle on this sensitive area, keeping you confidently fresh."
+      },
+      {
+        "id": 16,
+        "image": "/service-images/laser-ipl/arms-ipl.png",
+        "name": "Arms",
+        "duration": "30m",
+        "price": 70,
+        "description": "Achieve silky-smooth arms year-round with our full arm IPL Laser treatment that progressively reduces hair growth, leaving your skin touchably soft and free from stubble or razor bumps."
+      },
+      {
+        "id": 17,
+        "image": "/service-images/laser-ipl/half-arms-ipl.jpeg",
+        "name": "Half Arms",
+        "duration": "30m",
+        "price": 48,
+        "description": "Targeted IPL Laser treatment for the lower or upper arms that effectively reduces unwanted hair with customized settings for your skin type, ensuring safe, visible results."
+      },
+      {
+        "id": 18,
+        "image": "/service-images/laser-ipl/stomach-abdomen-ipl.jpg",
+        "name": "Stomach / Abdomen",
+        "duration": "30m",
+        "price": 58,
+        "description": "Our stomach/abdomen IPL treatment provides discreet, professional hair reduction for this sensitive area, performed with care to ensure your comfort while delivering excellent results."
+      },
+      {
+        "id": 19,
+        "image": "/service-images/laser-ipl/back-ipl.jpg",
+        "name": "Back",
+        "duration": "45m",
+        "price": 80,
+        "description": "Comprehensive back hair removal with IPL Laser technology that covers large areas efficiently, reducing unwanted hair growth while being gentle on the skin for men and women."
+      },
+      {
+        "id": 20,
+        "image": "/service-images/laser-ipl/bikini-ipl.jpg",
+        "name": "Bikini",
+        "duration": "30m",
+        "price": 50,
+        "description": "Our bikini line IPL treatment offers a comfortable solution for reducing hair in this delicate area, minimizing ingrown hairs and irritation while maintaining smooth results that last."
+      },
+      {
+        "id": 21,
+        "image": "/service-images/laser-ipl/brazilian-ipl.jpg",
+        "name": "Brazilian",
+        "duration": "30m",
+        "price": 80,
+        "description": "Experience the freedom of long-lasting smoothness with our Brazilian IPL treatment, performed with discretion and care to effectively reduce hair growth in the most intimate areas."
+      },
+      {
+        "id": 22,
+        "image": "/service-images/laser-ipl/buttocks-ipl.jpg",
+        "name": "Buttocks",
+        "duration": "30m",
+        "price": 55,
+        "description": "Professional IPL Laser treatment for the buttocks area that reduces unwanted hair growth comfortably and effectively, leaving skin smooth and free from irritation."
+      },
+      {
+        "id": 23,
+        "image": "/service-images/laser-ipl/legs-ipl.jpg",
+        "name": "Legs",
+        "duration": "1h",
+        "price": 85,
+        "description": "Our full leg IPL treatment provides comprehensive hair reduction from thighs to ankles, giving you the confidence of silky-smooth legs without the hassle of daily shaving or waxing."
+      },
+      {
+        "id": 24,
+        "image": "/service-images/laser-ipl/half-legs-ipl.jpg",
+        "name": "Half Legs",
+        "duration": "50m",
+        "price": 55,
+        "description": "Targeted IPL Laser treatment for either upper or lower legs that effectively reduces hair growth, leaving skin noticeably smoother with each session."
+      },
+      {
+        "id": 25,
+        "image": "/service-images/laser-ipl/full-body-ipl.webp",
+        "name": "Full Body",
+        "duration": "1h 30m",
+        "price": 280,
+        "description": "The ultimate in hair reduction, our Full Body IPL treatment covers all major areas for complete, long-lasting smoothness, saving you time and effort in your grooming routine."
+      },
+      {
+        "id": 26,
+        "image": "/service-images/laser-ipl/brazilian-underarms-ipl.jpeg",
+        "name": "Brazilian + Underarms",
+        "duration": "1h",
+        "price": 100,
+        "description": "This convenient combination treatment addresses both intimate and underarm areas with IPL Laser technology, providing comprehensive hair reduction where you want it most."
+      },
+      {
+        "id": 27,
+        "image": "/service-images/laser-ipl/chest-ipl.jpg",
+        "name": "Chest",
+        "duration": "30m",
+        "price": 70,
+        "description": "Professional chest hair reduction with IPL Laser that's customized to your desired look, whether you prefer complete removal or just thinning for a natural appearance."
+      },
+      {
+        "id": 28,
+        "image": "/service-images/laser-ipl/chin-ipl.jpg",
+        "name": "Chin",
+        "duration": "30m",
+        "price": 22,
+        "description": "Precise IPL Laser treatment for the chin area that effectively reduces unwanted hair with minimal discomfort, perfect for addressing stubborn hairs or maintaining smooth results."
+      }
+    ]
+  },
+  {
+    "category": "BODY TREATMENTS",
+    "description": "Our Body Treatments are designed to extend the benefits of professional skincare beyond the face, targeting commonly neglected areas such as the back. These treatments address concerns like clogged pores, acne, rough texture, and dullness using a combination of deep cleansing, exfoliation, extractions, therapeutic masks, and advanced technologies like LED light therapy. Perfect for clients dealing with 'bacne' or looking to prep for a special event, our body services promote healthier, smoother, and more even-toned skin in hard-to-reach areas. Each session is both corrective and deeply relaxing, leaving you feeling refreshed and confident from head to toe.",
+    "services": [
+      {
+        "id": 29,
+        "image": "/service-images/body-treatments/back-facial.jpg",
+        "name": "Back Facial",
+        "duration": "1h 30m",
+        "price": 75,
+        "description": "Specially designed for the back area, this treatment combines deep cleansing, exfoliation, extractions, and purifying masks with LED light therapy and massage to address bacne, congestion, and roughness for clearer, smoother skin you'll love to show off."
+      }
+    ]
+  },
+  {
+    "category": "WAXING SERVICES",
+    "description": "Our Waxing Services provide a smooth, long-lasting alternative to shaving, using professional techniques and high-quality wax to effectively remove unwanted hair from head to toe. Whether you're looking for a quick brow clean-up, a full Brazilian, or complete body hair removal, each service is performed with care to ensure minimal discomfort and maximum results. Waxing not only leaves the skin soft and hair-free for weeks, but also helps reduce hair growth and ingrown hairs over time. Ideal for maintaining a polished, confident look across all areas of the body, our waxing treatments are tailored to your preferences and skin sensitivity.",
+    "services": [
+      {
+        "id": 30,
+        "image": "/service-images/waxing-services/full-face-wax.webp",
+        "name": "Full Face",
+        "duration": "25m",
+        "price": 25,
+        "description": "Our complete Full Face waxing service removes unwanted hair from all facial areas including brows, upper lip, cheeks, and chin, leaving you with smooth, hair-free skin and perfectly defined features."
+      },
+      {
+        "id": 31,
+        "image": "/service-images/waxing-services/eyebrows-wax.png",
+        "name": "Eyebrows",
+        "duration": "15m",
+        "price": 15,
+        "description": "Professional eyebrow shaping and waxing service that creates clean, defined arches tailored to enhance your natural features and frame your face beautifully."
+      },
+      {
+        "id": 32,
+        "image": "/service-images/waxing-services/upper-lip-wax.jpg",
+        "name": "Upper Lip",
+        "duration": "10m",
+        "price": 10,
+        "description": "Quick and effective upper lip waxing that removes unwanted hair gently and precisely, leaving you with smooth results that last longer than shaving."
+      },
+      {
+        "id": 33,
+        "image": "/service-images/waxing-services/cheeks-wax.webp",
+        "name": "Cheeks",
+        "duration": "10m",
+        "price": 15,
+        "description": "Our cheek waxing service removes unwanted facial hair with precision, creating clean contours and a smooth complexion that enhances your natural beauty."
+      },
+      {
+        "id": 34,
+        "image": "/service-images/waxing-services/underarms-wax.webp",
+        "name": "Underarms",
+        "duration": "15m",
+        "price": 18,
+        "description": "Underarm waxing that provides longer-lasting smoothness than shaving, reducing hair growth over time while minimizing irritation and ingrown hairs in this delicate area."
+      },
+      {
+        "id": 35,
+        "image": "/service-images/waxing-services/half-arms-wax.jpeg",
+        "name": "Half Arms",
+        "duration": "25m",
+        "price": 20,
+        "description": "Precise waxing service for either the upper or lower arms that removes unwanted hair efficiently, leaving skin silky smooth with results that last weeks."
+      },
+      {
+        "id": 36,
+        "image": "/service-images/waxing-services/full-arms-wax.jpg",
+        "name": "Full Arms",
+        "duration": "30m",
+        "price": 35,
+        "description": "Complete arm waxing from shoulders to wrists that removes all unwanted hair for beautifully smooth arms you'll want to show off, with longer-lasting results than shaving."
+      },
+      {
+        "id": 37,
+        "image": "/service-images/waxing-services/bikini-wax.webp",
+        "name": "Bikini",
+        "duration": "30m",
+        "price": 38,
+        "description": "Our bikini wax service creates clean, defined edges while removing unwanted hair along the bikini line, performed with care for your comfort and beautiful results."
+      },
+      {
+        "id": 38,
+        "image": "/service-images/waxing-services/brazilian-wax.jpeg",
+        "name": "Brazilian",
+        "duration": "40m",
+        "price": 50,
+        "description": "Complete Brazilian wax service that removes all hair from the front, back, and everything in between for total smoothness, performed efficiently with attention to your comfort."
+      },
+      {
+        "id": 39,
+        "image": "/service-images/waxing-services/half-legs-wax.webp",
+        "name": "Half Legs",
+        "duration": "30m",
+        "price": 35,
+        "description": "Professional waxing for either upper or lower legs that removes hair quickly and effectively, leaving skin silky smooth with results that last significantly longer than shaving."
+      },
+      {
+        "id": 40,
+        "image": "/service-images/waxing-services/full-legs-wax.webp",
+        "name": "Full Legs",
+        "duration": "45m",
+        "price": 60,
+        "description": "Comprehensive full leg waxing from thighs to ankles that provides complete hair removal for beautifully smooth legs that stay hair-free for weeks."
+      },
+      {
+        "id": 41,
+        "image": "/service-images/waxing-services/back-wax.jpeg",
+        "name": "Back",
+        "duration": "30m",
+        "price": 60,
+        "description": "Professional back waxing service that efficiently removes unwanted hair from the entire back area, leaving skin smooth and reducing hair growth over time."
+      },
+      {
+        "id": 42,
+        "image": "/service-images/waxing-services/chest-wax.png",
+        "name": "Chest",
+        "duration": "30m",
+        "price": 55,
+        "description": "Our chest waxing service removes unwanted hair gently and thoroughly, allowing you to customize your look from complete removal to just thinning for a natural appearance."
+      }
+    ]
+  }
+]

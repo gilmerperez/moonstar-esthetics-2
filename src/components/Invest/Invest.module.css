@@ -1,0 +1,144 @@
+.investSection {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  box-shadow: var(--shadow-small);
+  background-color: hsl(0, 50%, 96.1%);
+}
+
+.investSection:hover {
+  box-shadow: var(--shadow-large);
+}
+
+/* Title */
+.investTitle {
+  font-size: 2.5rem;
+  transition: 0.3s ease;
+  margin-bottom: 0.25rem;
+  color: hsl(0, 0%, 15%);
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Description */
+.investDescription {
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  color: hsl(0, 0%, 30%);
+}
+
+/* Tips */
+.investTips {
+  gap: 1rem;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  transition: 0.3s ease;
+  justify-content: center;
+  grid-template-columns: 75px 1fr;
+}
+
+.investTip {
+  display: contents;
+}
+
+.tipNumber {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  font-size: 1.75rem;
+  border-radius: 5rem;
+  align-items: center;
+  transition: 0.3s ease;
+  justify-content: center;
+  color: hsl(0, 0%, 10%);
+  background-color: var(--primary);
+}
+
+.tipNumber:hover {
+  background-color: var(--secondary);
+}
+
+.tipText {
+  height: 75px;
+  display: flex;
+  font-size: 1.75rem;
+  align-items: center;
+  border-radius: 5rem;
+  transition: 0.3s ease;
+  justify-content: center;
+  color: hsl(0, 0%, 10%);
+  background-color: var(--primary);
+}
+
+.tipText:hover {
+  background-color: var(--secondary);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .investSection {
+    padding: 1.75rem;
+  }
+
+  .investTitle {
+    font-size: 2.25rem;
+  }
+
+  .investDescription {
+    font-size: 1.25rem;
+  }
+
+  .investTips {
+    gap: 0.5rem;
+  }
+
+  .tipNumber {
+    font-size: 1.5rem;
+  }
+
+  .tipText {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .investSection {
+    padding: 1.5rem;
+  }
+
+  .investTitle {
+    font-size: 1.75rem;
+  }
+
+  .investDescription {
+    font-size: 1.15rem;
+  }
+
+  .investTips {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .tipNumber {
+    width: 55px;
+    height: 55px;
+    font-size: 1.25rem;
+  }
+
+  .tipText {
+    height: 55px;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+}
