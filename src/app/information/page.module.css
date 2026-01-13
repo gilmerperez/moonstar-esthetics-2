@@ -1,0 +1,290 @@
+.informationContainer {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Title */
+.informationTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary);
+  transition: 0.3s ease;
+  font-family: var(--font-libre-baskerville), serif;
+}
+
+/* Description */
+.informationDescription {
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  color: var(--text-secondary);
+}
+
+/* Phone and email card */
+.cardsRow {
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  justify-content: center;
+}
+
+.infoCard {
+  width: 50%;
+  padding: 1.25rem;
+  text-align: left;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-small);
+  border: 2px solid var(--primary);
+  background-color: var(--header-bg-color);
+}
+
+.infoCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-large);
+}
+
+.infoCard .iconRow {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
+  justify-content: flex-start;
+}
+
+.infoCard .iconRow i {
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+.infoCard .iconRow h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.infoCard .contactDetail {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  margin-bottom: 0.25rem;
+}
+
+.infoCard .cardSubheading {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* Payment card */
+.paymentCard {
+  width: 100%;
+  padding: 1.25rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow-small);
+  border: 2px solid var(--primary);
+  background-color: var(--header-bg-color);
+}
+
+.paymentCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-large);
+}
+
+.paymentCard .iconRow {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  justify-content: flex-start;
+}
+
+.paymentCard .iconRow i {
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+.paymentCard .iconRow h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.paymentCard .paymentIcons {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: flex-start;
+}
+
+.paymentCard .paymentIcons i {
+  font-size: 1.75rem;
+}
+
+.paymentCard .cardSubheading {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* Hours of operation card */
+.hoursCard {
+  width: 100%;
+  padding: 1.25rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow-small);
+  border: 2px solid var(--primary);
+  background-color: var(--header-bg-color);
+}
+
+.hoursCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-large);
+}
+
+.hoursCard .iconRow {
+  gap: 0.75rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  justify-content: flex-start;
+}
+
+.hoursCard .iconRow i {
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+.hoursCard .iconRow h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.hoursContainer {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: flex-start;
+}
+
+.hoursList {
+  gap: 0.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hoursList .hoursDay {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.hoursList .hoursTime {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+}
+
+.hoursCard .cardSubheading {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .informationTitle {
+    font-size: 2.5rem;
+  }
+
+  .cardsRow {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .infoCard,
+  .paymentCard,
+  .hoursCard {
+    width: 100%;
+    padding: 1.15rem;
+    text-align: center;
+  }
+
+  .infoCard .iconRow,
+  .paymentCard .iconRow,
+  .hoursCard .iconRow {
+    justify-content: center;
+  }
+
+  .paymentCard .paymentIcons {
+    justify-content: center;
+  }
+
+  .hoursContainer {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .hoursList {
+    gap: 1rem;
+    flex-direction: row;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .informationTitle {
+    font-size: 2rem;
+  }
+
+  .informationDescription {
+    font-size: 1rem;
+  }
+
+  .infoCard,
+  .paymentCard,
+  .hoursCard {
+    padding: 1rem;
+  }
+
+  .infoCard .contactDetail {
+    font-size: 1.25rem;
+  }
+
+  .infoCard .cardSubheading {
+    font-size: 1.15rem;
+  }
+
+  .paymentCard .cardSubheading {
+    font-size: 1.15rem;
+  }
+
+  .hoursList .hoursDay {
+    font-size: 1.15rem;
+  }
+
+  .hoursList .hoursTime {
+    font-size: 1rem;
+  }
+
+  .hoursCard .cardSubheading {
+    font-size: 1.15rem;
+  }
+}

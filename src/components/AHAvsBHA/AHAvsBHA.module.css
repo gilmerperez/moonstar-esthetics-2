@@ -37,7 +37,7 @@
   transition: 0.3s ease;
   margin-bottom: 0.25rem;
   color: hsl(0, 0%, 100%);
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--font-libre-baskerville), serif;
 }
 
 /* Description */
@@ -75,7 +75,7 @@
   transition: 0.3s ease;
   margin-bottom: 0.25rem;
   color: hsl(0, 0%, 100%);
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--font-libre-baskerville), serif;
 }
 
 /* List */

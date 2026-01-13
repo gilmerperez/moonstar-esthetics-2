@@ -1,9 +1,14 @@
+"use client";
+
 import styles from "./Header.module.css";
 import { createPortal } from "react-dom";
 import { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-function Header() {
+export default function Header() {
+  const pathname = usePathname();
+
   // * Sticky header logic
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isScrollingUp, setIsScrollingUp] = useState(true);
@@ -20,7 +25,7 @@ function Header() {
   }, [lastScrollY]);
 
   // * Custom styles for active page
-  const navLinkClass = ({ isActive }) => (isActive ? styles.activeLink : undefined);
+  const isActive = (path) => pathname === path;
 
   // * Theme switch
   const [theme, setTheme] = useState("light");
@@ -83,36 +88,36 @@ function Header() {
           {/* Desktop header */}
           <div className={styles.desktopHeader}>
             {/* Logo */}
-            <NavLink to="/" className={styles.moonstarLogo}>
+            <Link href="/" className={styles.moonstarLogo}>
               <span className={styles.moonstar}>MOONSTAR</span>
               <span className={styles.esthetics}>ESTHETICS</span>
-            </NavLink>
+            </Link>
             <div className={styles.navContainer}>
               {/* Site navigation */}
               <nav className={styles.navItems}>
-                <NavLink to="/" className={navLinkClass}>
+                <Link href="/" className={isActive("/") ? styles.activeLink : undefined}>
                   Home
-                </NavLink>
-                <NavLink to="/services" className={navLinkClass}>
+                </Link>
+                <Link href="/services" className={isActive("/services") ? styles.activeLink : undefined}>
                   Services
-                </NavLink>
-                <NavLink to="/reviews" className={navLinkClass}>
+                </Link>
+                <Link href="/reviews" className={isActive("/reviews") ? styles.activeLink : undefined}>
                   Reviews
-                </NavLink>
-                <NavLink to="/information" className={navLinkClass}>
+                </Link>
+                <Link href="/information" className={isActive("/information") ? styles.activeLink : undefined}>
                   Information
-                </NavLink>
+                </Link>
               </nav>
               {/* Separator */}
               <span className={styles.separator}>|</span>
               <div className={styles.functionalButtons}>
                 {/* Theme button */}
-                <button className={styles.themeButton} onClick={toggleTheme}>
+                <button className={styles.themeButton} onClick={toggleTheme} aria-label="Toggle theme">
                   <i className={`fa-solid ${theme === "light" ? "fa-moon" : "fa-sun"}`}></i>
                 </button>
                 {/* Book now button */}
                 <button className={styles.bookNowButton}>
-                  <Link rel="noopener noreferrer" target="_blank" to="https://moonstaresthetics.setmore.com/">
+                  <Link rel="noopener noreferrer" target="_blank" href="https://moonstaresthetics.setmore.com/">
                     Book Now
                   </Link>
                 </button>
@@ -123,16 +128,16 @@ function Header() {
           {/* Mobile header */}
           <div className={styles.mobileHeader}>
             {/* Phone button */}
-            <button className={styles.phoneButton} onClick={handlePhoneClick}>
+            <button className={styles.phoneButton} onClick={handlePhoneClick} aria-label="Call us">
               <i className="fa-solid fa-phone-volume"></i>
             </button>
             {/* Logo */}
-            <NavLink to="/" className={styles.mobileLogoContainer}>
+            <Link href="/" className={styles.mobileLogoContainer}>
               <span className={styles.moonstar}>MOONSTAR</span>
               <span className={styles.esthetics}>ESTHETICS</span>
-            </NavLink>
+            </Link>
             {/* Hamburger menu */}
-            <button className={styles.hamburger} onClick={handleHamburgerClick}>
+            <button className={styles.hamburger} onClick={handleHamburgerClick} aria-label="Open menu">
               <i className={`fa-solid fa-bars ${isSpinning ? styles.spin : ""}`}></i>
             </button>
           </div>
@@ -145,23 +150,35 @@ function Header() {
           <div className={styles.sidebarOverlay} onClick={() => setMenuOpen(false)}>
             <div className={styles.sidebar} onClick={(e) => e.stopPropagation()}>
               {/* Sidebar close button */}
-              <button className={styles.sidebarClose} onClick={() => setMenuOpen(false)}>
+              <button className={styles.sidebarClose} onClick={() => setMenuOpen(false)} aria-label="Close menu">
                 <i className="fa-solid fa-xmark"></i>
               </button>
               {/* Sidebar site navigation */}
               <nav className={styles.sidebarNavItems}>
-                <NavLink to="/" className={navLinkClass} onClick={() => setMenuOpen(false)}>
+                <Link href="/" className={isActive("/") ? styles.activeLink : undefined} onClick={() => setMenuOpen(false)}>
                   Home
-                </NavLink>
-                <NavLink to="/services" className={navLinkClass} onClick={() => setMenuOpen(false)}>
+                </Link>
+                <Link
+                  href="/services"
+                  className={isActive("/services") ? styles.activeLink : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Services
-                </NavLink>
-                <NavLink to="/reviews" className={navLinkClass} onClick={() => setMenuOpen(false)}>
+                </Link>
+                <Link
+                  href="/reviews"
+                  className={isActive("/reviews") ? styles.activeLink : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Reviews
-                </NavLink>
-                <NavLink to="/information" className={navLinkClass} onClick={() => setMenuOpen(false)}>
+                </Link>
+                <Link
+                  href="/information"
+                  className={isActive("/information") ? styles.activeLink : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Information
-                </NavLink>
+                </Link>
                 {/* Sidebar separator */}
                 <hr className={styles.sidebarSeparator} />
                 {/* Sidebar book now button */}
@@ -174,19 +191,35 @@ function Header() {
               {/* Sidebar footer */}
               <div className={styles.sidebarFooter}>
                 {/* Sidebar theme button */}
-                <button className={`${styles.themeButton} ${styles.sidebarThemeButton}`} onClick={toggleTheme}>
+                <button
+                  className={`${styles.themeButton} ${styles.sidebarThemeButton}`}
+                  onClick={toggleTheme}
+                  aria-label="Toggle theme"
+                >
                   <i className={`fa-solid ${theme === "light" ? "fa-moon" : "fa-sun"}`}></i>
                 </button>
                 {/* Sidebar legal pages */}
-                <NavLink to="/contact" className={navLinkClass} onClick={() => setMenuOpen(false)}>
+                <Link
+                  href="/contact"
+                  className={isActive("/contact") ? styles.activeLink : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Contact
-                </NavLink>
-                <NavLink to="/privacy-policy" className={navLinkClass} onClick={() => setMenuOpen(false)}>
+                </Link>
+                <Link
+                  href="/privacy-policy"
+                  className={isActive("/privacy-policy") ? styles.activeLink : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Privacy Policy
-                </NavLink>
-                <NavLink to="/terms-of-service" className={navLinkClass} onClick={() => setMenuOpen(false)}>
+                </Link>
+                <Link
+                  href="/terms-of-service"
+                  className={isActive("/terms-of-service") ? styles.activeLink : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Terms of Service
-                </NavLink>
+                </Link>
               </div>
             </div>
           </div>,
@@ -195,5 +228,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;
