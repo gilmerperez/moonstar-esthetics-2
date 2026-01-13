@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import Script from "next/script";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next";
 import { Montserrat, Libre_Baskerville } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <Analytics />
         </body>
       </html>
     </>
