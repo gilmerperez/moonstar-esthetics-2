@@ -1,9 +1,8 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "./ServiceCard.module.css";
-import Image from "next/image";
 
 export default function ServiceCard({ service }) {
   // * Set state for cancellation policy popup
@@ -41,7 +40,11 @@ export default function ServiceCard({ service }) {
               </a>
             </button>
             {/* Cancellation policy icon */}
-            <button onClick={() => setShowModal(true)} className={styles.policyIconButton} aria-label="View cancellation policy">
+            <button
+              onClick={() => setShowModal(true)}
+              className={styles.policyIconButton}
+              aria-label="View cancellation policy"
+            >
               <i className="fa-regular fa-calendar"></i>
             </button>
           </div>

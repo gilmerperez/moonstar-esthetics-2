@@ -20,17 +20,17 @@ Moonstar Esthetics is a modern, responsive web application built to showcase the
 
 ## Features
 
-- **Service Catalog:** Browse detailed listings for facial, laser/IPL, body, and waxing treatments, each with images, descriptions, pricing, and duration. Services can be sorted by price or duration for easy comparison.
-
-- **Client Reviews:** Real client testimonials build trust and credibility. The reviews page features an average rating display, rating distribution, and sortable review cards.
-
-- **Modern UI with Theme Toggle:** Clean, elegant design with smooth transitions and interactive elements. Includes a light/dark theme toggle that respects user system preferences and persists across sessions.
+- **Legal Pages:** Includes Privacy Policy and Terms of Service for compliance and transparency, with dynamic date updates.
 
 - **Contact & Inquiry:** Easy-to-use contact form for questions and appointment requests, with direct integration to email clients.
 
 - **Responsive Design:** Fully mobile-friendly layout ensures a seamless experience on all devices, with a mobile-optimized navigation sidebar and adaptive layouts.
 
-- **Legal Pages:** Includes Privacy Policy and Terms of Service for compliance and transparency, with dynamic date updates.
+- **Client Reviews:** Real client testimonials build trust and credibility. The reviews page features an average rating display, rating distribution, and sortable review cards.
+
+- **Modern UI with Theme Toggle:** Clean, elegant design with smooth transitions and interactive elements. Includes a light/dark theme toggle that respects user system preferences and persists across sessions.
+
+- **Service Catalog:** Browse detailed listings for facial, laser/IPL, body, and waxing treatments, each with images, descriptions, pricing, and duration. Services can be sorted by price or duration for easy comparison.
 
 ## Mock Up
 
@@ -50,10 +50,10 @@ The following images demonstrate the web application's appearance and functional
 
 **Frontend:**
 
-- **Next.js 16:** React framework with App Router for server-side rendering, static generation, and optimized performance
-- **React 19:** Component-based UI library for building interactive user interfaces
 - **CSS Modules:** Scoped, maintainable styles for each component
 - **JavaScript (ES6+):** Modern language features for robust, maintainable code
+- **React 19:** Component-based UI library for building interactive user interfaces
+- **Next.js 16:** React framework with App Router for server-side rendering, static generation, and optimized performance
 
 **Backend:**
 
@@ -61,10 +61,8 @@ The following images demonstrate the web application's appearance and functional
 
 **Other Technologies:**
 
-- **JSON:** Structured data storage for services and reviews
 - **Font Awesome:** Icon library for UI elements
+- **JSON:** Structured data storage for services and reviews
 - **Google Fonts:** Montserrat and Libre Baskerville typography
 
 ---
-
-**GitHub Repository Description:** A modern, responsive Next.js web application showcasing Moonstar Esthetics' comprehensive skincare, laser/IPL, and waxing services with intuitive navigation, client reviews, and seamless booking integration.

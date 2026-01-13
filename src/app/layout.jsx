@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import Script from "next/script";
-import { Montserrat, Libre_Baskerville } from "next/font/google";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import { Montserrat, Libre_Baskerville } from "next/font/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,13 +31,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${libreBaskerville.variable}`}>
-      <body>
-        <Script src="https://kit.fontawesome.com/ffb8948ab7.js" crossOrigin="anonymous" strategy="afterInteractive" />
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <html lang="en" className={`${montserrat.variable} ${libreBaskerville.variable}`}>
+        <body>
+          <Script src="https://kit.fontawesome.com/ffb8948ab7.js" crossOrigin="anonymous" strategy="afterInteractive" />
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }

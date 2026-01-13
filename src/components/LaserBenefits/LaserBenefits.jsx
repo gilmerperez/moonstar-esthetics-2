@@ -45,30 +45,32 @@ export default function LaserBenefits() {
   };
 
   return (
-    <section className={styles.laserSection}>
-      <div className={styles.overlay}>
-        {/* Title */}
-        <h2 className={styles.laserTitle}>4 BENEFITS OF LASER HAIR REMOVAL</h2>
-        {/* Accordion */}
-        <div className={styles.accordion}>
-          {accordionData.map((item, index) => (
-            <div key={index} className={styles.accordionItem}>
-              {/* Accordion title */}
-              <button
-                onClick={() => toggleAccordion(index)}
-                className={`${styles.accordionTitle} ${activeIndex === index ? styles.active : ""}`}
-              >
-                {item.title}
-                <span className={styles.icon}>{activeIndex === index ? "−" : "+"}</span>
-              </button>
-              {/* Accordion text */}
-              <div className={`${styles.accordionText} ${activeIndex === index ? styles.open : ""}`}>
-                <p>{item.content}</p>
+    <>
+      <section className={styles.laserSection}>
+        <div className={styles.overlay}>
+          {/* Title */}
+          <h2 className={styles.laserTitle}>4 BENEFITS OF LASER HAIR REMOVAL</h2>
+          {/* Accordion */}
+          <div className={styles.accordion}>
+            {accordionData.map((item, index) => (
+              <div key={index} className={styles.accordionItem}>
+                {/* Accordion title */}
+                <button
+                  onClick={() => toggleAccordion(index)}
+                  className={`${styles.accordionTitle} ${activeIndex === index ? styles.active : ""}`}
+                >
+                  {item.title}
+                  <span className={styles.icon}>{activeIndex === index ? "−" : "+"}</span>
+                </button>
+                {/* Accordion text */}
+                <div className={`${styles.accordionText} ${activeIndex === index ? styles.open : ""}`}>
+                  <p>{item.content}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

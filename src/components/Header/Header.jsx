@@ -1,9 +1,8 @@
 "use client";
-
+import Link from "next/link";
 import styles from "./Header.module.css";
 import { createPortal } from "react-dom";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -155,7 +154,11 @@ export default function Header() {
               </button>
               {/* Sidebar site navigation */}
               <nav className={styles.sidebarNavItems}>
-                <Link href="/" className={isActive("/") ? styles.activeLink : undefined} onClick={() => setMenuOpen(false)}>
+                <Link
+                  href="/"
+                  className={isActive("/") ? styles.activeLink : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Home
                 </Link>
                 <Link
