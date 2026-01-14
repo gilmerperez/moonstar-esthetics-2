@@ -10,7 +10,7 @@ Moonstar Esthetics is a modern, responsive web application built to showcase the
 
 - **Methodology:** Built with Next.js using the App Router architecture, the application follows a component-based design pattern with server-side rendering for optimal SEO and performance. The site uses CSS Modules for scoped styling, JSON for structured data management, and implements client-side interactivity where needed while maintaining fast initial page loads through Next.js optimizations.
 
-**Live Demo:** [Link to Deployed Application](https://moonstar-esthetics.vercel.app/)
+**Live Demo:** [Link to Deployed Application](https://www.moonstaresthetics.com/)
 
 ## Table of Contents
 
