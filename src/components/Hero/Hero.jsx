@@ -19,13 +19,13 @@ export default function Hero() {
       <section className={styles.heroSection}>
         {/* Moonstar logo */}
         <Image
-          src="/images/moonstar-moon.png"
-          alt="Moonstar Esthetics Moon Logo"
+          priority
           width={150}
           height={150}
-          className={styles.moonstarMoon}
-          priority
           style={{ width: "auto" }}
+          className={styles.moonstarMoon}
+          src="/images/moonstar-moon.png"
+          alt="Moonstar Esthetics Moon Logo"
         />
         <div className={styles.moonstarLogo}>
           <span className={styles.moonstar}>MOONSTAR</span>

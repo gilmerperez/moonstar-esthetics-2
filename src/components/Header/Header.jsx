@@ -27,17 +27,17 @@ export default function Header() {
   const isActive = (path) => pathname === path;
 
   // * Theme switch
-  const [theme, setTheme] = useState("light");
-
-  // Make theme be set in DOM
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-
-    const initialTheme = storedTheme || (prefersLight ? "light" : "dark");
-    setTheme(initialTheme);
-    document.documentElement.setAttribute("data-theme", initialTheme);
-  }, []);
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== "undefined") {
+      const storedTheme = localStorage.getItem("theme");
+      const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+      const initialTheme = storedTheme || (prefersLight ? "light" : "dark");
+      // Set DOM attribute immediately to prevent flash
+      document.documentElement.setAttribute("data-theme", initialTheme);
+      return initialTheme;
+    }
+    return "light";
+  });
 
   // Save theme to localStorage
   useEffect(() => {

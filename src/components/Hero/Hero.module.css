@@ -113,7 +113,6 @@
 /* Tablet responsiveness */
 @media (max-width: 768px) {
   .moonstarMoon {
-    width: auto;
     height: 125px;
   }
 
@@ -151,7 +150,6 @@
 /* Mobile responsiveness */
 @media (max-width: 480px) {
   .moonstarMoon {
-    width: auto;
     height: 100px;
   }
 

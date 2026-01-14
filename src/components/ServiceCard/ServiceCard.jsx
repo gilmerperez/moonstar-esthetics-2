@@ -14,11 +14,13 @@ export default function ServiceCard({ service }) {
         {/* Service image */}
         <div className={styles.serviceImageContainer}>
           <Image
-            src={service.image}
-            alt={`${service.name} Service Image`}
+            priority
             width={250}
             height={250}
+            src={service.image}
+            style={{ width: "auto" }}
             className={styles.serviceImage}
+            alt={`${service.name} Service Image`}
           />
         </div>
         {/* Service content */}
