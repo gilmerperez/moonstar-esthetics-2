@@ -63,6 +63,9 @@ export const metadata = {
   authors: [{ name: "Moonstar Esthetics" }],
   creator: "Moonstar Esthetics",
   publisher: "Moonstar Esthetics",
+  alternates: {
+    canonical: "https://www.moonstaresthetics.com",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -100,7 +103,7 @@ export const metadata = {
   },
   verification: {
     // Add Google Search Console verification code if available
-    // google: "your-verification-code",
+    google: "qQnQb2-75Ey87CzVgDFnURiHMGL_D5DGnqAukXkfHuU",
   },
   icons: {
     icon: "/favicon.png",
@@ -110,10 +113,102 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // Structured data for LocalBusiness schema (JSON-LD)
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    name: "Moonstar Esthetics",
+    image: "https://www.moonstaresthetics.com/images/moonstar-moon.png",
+    "@id": "https://www.moonstaresthetics.com",
+    url: "https://www.moonstaresthetics.com",
+    telephone: "(321) 352-0639",
+    email: "moonstaresthetics@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "6881 Kingspointe Pkwy Suite #4",
+      addressLocality: "Orlando",
+      addressRegion: "FL",
+      postalCode: "32819",
+      addressCountry: "US",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        opens: "08:00",
+        closes: "20:30",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Friday",
+        opens: "08:00",
+        closes: "20:00",
+      },
+    ],
+    priceRange: "$$",
+    currenciesAccepted: "USD",
+    paymentAccepted: "Cash, Credit Card, PayPal, Apple Pay",
+    areaServed: {
+      "@type": "City",
+      name: "Orlando",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Skincare Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Full Facial",
+            description: "Customized facial treatment for radiant, healthy skin",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "IPL Laser Hair Removal",
+            description: "Intense Pulsed Light hair removal treatments for long-lasting smoothness",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Waxing Services",
+            description: "Professional waxing treatments for smooth, hair-free skin",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "LED Light Therapy",
+            description: "Red and green light therapy for skin rejuvenation and balance",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Dermaplaning",
+            description: "Safe and effective exfoliation treatment using a scalpel",
+          },
+        },
+      ],
+    },
+  };
+
   return (
     <>
       <html lang="en" className={`${montserrat.variable} ${libreBaskerville.variable}`}>
         <body>
+          <Script
+            id="structured-data"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          />
           <Script src="https://kit.fontawesome.com/ffb8948ab7.js" crossOrigin="anonymous" strategy="afterInteractive" />
           <Header />
           {children}

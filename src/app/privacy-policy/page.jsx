@@ -4,6 +4,13 @@ export const metadata = {
   title: "Moonstar Esthetics | Privacy Policy",
   description:
     "Privacy Policy for Moonstar Esthetics. Learn how we handle your information when you visit our website.",
+  alternates: {
+    canonical: "https://www.moonstaresthetics.com/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicy() {

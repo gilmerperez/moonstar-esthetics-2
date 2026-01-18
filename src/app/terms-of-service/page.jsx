@@ -3,6 +3,13 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Moonstar Esthetics | Terms of Service",
   description: "Terms of Service for Moonstar Esthetics website. Read our terms and conditions for using our site.",
+  alternates: {
+    canonical: "https://www.moonstaresthetics.com/terms-of-service",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function TermsOfService() {

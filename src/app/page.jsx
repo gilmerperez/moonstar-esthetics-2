@@ -14,6 +14,9 @@ export const metadata = {
   title: "Moonstar Esthetics | Home",
   description:
     "Welcome to Moonstar Esthetics, a calm and modern studio dedicated to helping you achieve your most luminous skin. Professional skincare, IPL laser hair removal, and waxing services.",
+  alternates: {
+    canonical: "https://www.moonstaresthetics.com",
+  },
 };
 
 export default function Home() {

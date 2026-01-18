@@ -4,6 +4,22 @@ export const metadata = {
   title: "Moonstar Esthetics | Information",
   description:
     "Find Moonstar Esthetics location, hours, payment options, and contact details. Located in Orlando, FL. Open Monday-Friday.",
+  alternates: {
+    canonical: "https://www.moonstaresthetics.com/information",
+  },
+  openGraph: {
+    title: "Information | Moonstar Esthetics",
+    description: "Location, hours, and contact information for Moonstar Esthetics in Orlando, FL.",
+    url: "https://www.moonstaresthetics.com/information",
+    images: [
+      {
+        url: "/screenshots/informationPage.png",
+        width: 1200,
+        height: 630,
+        alt: "Moonstar Esthetics Information - Location and Contact Details",
+      },
+    ],
+  },
 };
 
 export default function Information() {
