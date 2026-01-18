@@ -102,7 +102,6 @@ export const metadata = {
     },
   },
   verification: {
-    // Add Google Search Console verification code if available
     google: "qQnQb2-75Ey87CzVgDFnURiHMGL_D5DGnqAukXkfHuU",
   },
   icons: {
